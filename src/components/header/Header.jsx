@@ -35,12 +35,6 @@ const [selectOption, setSelectOption] = useState("all")
   function closeClick(){
     setSidebar(false)
   }
-  if(sidebar){
-    document.body.style.overflow = "hidden"
-  }
-  else{
-    document.body.style.overflow = "auto"
-  }
   const { pathname } = useLocation()
   if(pathname.includes("/signin")){
     return

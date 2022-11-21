@@ -74,4 +74,16 @@ color: white;
     .footer_text_box p{
         font-size: 10px;
     }
+    .footer_above_box{
+        display: block;
+        height: auto;
+    }
+    .box_leftside{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, auto);        
+    }
+    .box_rightside{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, auto);
+    }
 }
