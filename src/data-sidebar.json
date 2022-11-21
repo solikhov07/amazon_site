@@ -1,0 +1,91 @@
+[
+    {
+        "type": "Digital Content & Devices",
+        "text": [
+            {
+        "menuType": "Stream Music",
+                "option": "Amazon Music",
+                "info": ["Amazon music unlimited", "Free streaming music", "Podcasts", "Play Music", "Open Web Player", "Download the app"]
+            },
+            {
+        "menuType": "Kindle Store",
+                "option": "Kindle E-readers & Books ",
+                "info": ["Kindle books", "Kindle unlimited", "Prime reading", "Kindle Vella"]
+            },
+            {
+        "menuType": "Amazon Appstore",
+                "option": "Amazon Appstore",
+                "info": ["All apps and games", "Games", "Amazon Coins", "Download Amazon Appstore", "Amazon Apps", "Your Apps and subscriptions"]
+            }
+        ]
+    },
+    {
+        "type": "Shop by department",
+        "text": [
+            {
+                "menuType": "Electronics",
+                "option": "Electronics",
+                "info": ["Accessories & Supplies", "Camera & Photo", "Car & Vehicle Electronics", "Cell Phones & Accessories", "Computers & Accessories", "GPS & Navigation", "Headphones", "Home Audio", "Office Electronics", "Portable Audio & Video", "Portable Audio & Video", "Security & Surveillance", "eBook Readers & Accessories"]
+            },
+            {
+                "menuType": "Electronics",
+                "option": "Computers",
+                "info": ["Computer Accessories & Peripherals", "Computer Components", "Computers & Tablets", "Data Storage", "External Components", "Laptop Accessories", "Monitors", "Networking Products", "Power Strips & Surge Protectors", "Printers"]
+            },
+            {
+                "menuType": "Smart Home",
+                "option": "Smart Home",
+                "info": ["Amazon Smart Home", "Smart Home Lighting", "Smart Locks and Entry", "Security Cameras and Systems", "Plugs and Outlets", "New Smart Devices", "Heating and Cooling", "Detectors and Sensors", "Home Entertainment", "Pet", "WIFI and Networking", "Other Solutions"]
+            },
+            {
+                "menuType": "Arts & Crafts",
+                "option": "Arts & Crafts",
+                "info": ["Painting, Drawing & Art Supplies", "Beading & Jewelry Making", "Crafting", "Fabric", "Fabric Decorating", "Knitting & Crochet", "Needlework", "Organization, Storage & Transport", "Sewing", "Party Decorations & Supplies", "Gift Wrapping Supplies"]
+            }
+           
+        ],
+        "more": "See All",
+        "less": "See less"
+
+    },
+    {
+        "type": "Programs & features",
+        "text": [
+            
+            {
+                "menuType": "Give A Gift Card",
+                "option": "Gift Cards",
+                "info": ["All gift cards", "eGift cards", "Gift cards by mail", "Specialty gift cards", "Amazon Cash", "For Businesses"]
+            },
+            {
+                "menuType": "Amazon Live",
+                "option": "Amazon Live",
+                "info": ["Live", "Recently Live"]
+            },
+            {
+                "menuType": "",
+                "option": "International Shopping",
+                "info": ["Where we ship", "Visit Amazon", "Global"]
+            }
+        ],
+        "moreTwo": "See All",
+        "less": "See less"
+    },
+    {
+        "type": "Help & Settings",
+        "textRegistr": [
+            {
+                "option": "Your Account"
+            },
+            {
+                "option": "English"
+            },
+            {
+                "option": "Customer Service"
+            },
+            {
+                "option": "Sign in"
+            }
+        ]
+    }
+]

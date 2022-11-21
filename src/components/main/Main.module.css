@@ -1,0 +1,333 @@
+*{
+    scroll-behavior: smooth;
+
+}
+
+.carousel_box{
+    width: 100%;
+    min-height: 70vh;
+    margin: auto;
+    position: relative;
+}
+.wrapper_btn_box{
+    display: flex;
+    justify-content: space-between;
+    top: 20vh;
+    width: 100%;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+}
+.btn_left{
+    border: none;
+    background: none;
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+}
+.btn_left:hover{
+    color: gray;
+}
+.btn_right{
+    border: none;
+    background: none;
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+}
+.btn_right:hover{
+    color: gray;
+}
+.carousel_photo_box{
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    overflow: hidden;
+    scroll-behavior: smooth;
+display: flex;
+align-items: center;
+position: relative;
+}
+.carousel_photo{
+    min-width: 100%;
+height: 100%;
+-webkit-mask-image: linear-gradient(180deg,rgb(72, 72, 72) 20%,#00000000);
+mask-image: linear-gradient(180deg,#000 30%,#00000000);
+object-fit: cover;
+}
+.carousel_circle_box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+top: 40vh;
+}
+.carousel_circles{
+    width: 20px;
+    cursor: pointer;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(183, 183, 183);
+    margin: 0 5px;
+}
+main{
+
+    margin-top: -150px;
+
+margin: 0 auto;
+width: 90%;
+    height: auto;
+    background-color: rgb(244, 244, 244);
+}
+.main_picture_box{
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-gap: 20px;
+    margin: -150px 0 0 0;
+}
+.picture_box{
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.picture_box > img{
+    max-width: 90%;
+    height: auto;
+    
+}
+.link_signin_btn{
+    text-decoration: none;
+    width: 90%;
+}
+.btn_product{
+    margin: 10px 0px;
+    cursor: pointer;
+    height: auto;
+    background-color: #ffb731;
+    width: 100%;
+    padding: 5px;
+border-radius: 5px;
+text-decoration: none;
+color: black;
+border: none;
+}
+.btn_product:hover{
+    background-color: orange;
+}
+.main_photos{
+    width: 90%;
+    height: 70%;
+    object-fit: cover;
+}
+.box_card_text{
+    width: 90%;
+}
+.box_card_link{
+    width: 90%;
+color: dodgerblue;
+text-decoration: none;
+}
+.carousel_products{
+    width: 100%;
+    height: 200px;
+padding: 40px 0;
+    position: relative;
+    background-color: white;
+}
+.btn_wrapper_carousel{
+    width: 100%;
+    top: 40%;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    left: 0;
+}
+.btn_prev, .btn_next {
+    border: none;
+    border-radius: 4px;
+    font-size: 25px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: white;
+}
+.carousel_box_photo{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    scroll-behavior: smooth;
+}
+.carousel_box_photo::-webkit-scrollbar{
+    height: 10px;
+}
+.carousel_box_photo::-webkit-scrollbar-thumb{
+    height: 100%;
+    background-color: orange;
+    border-radius: 5px;
+}
+.product_img{
+    width: 100%;
+    height: 100%;
+    margin: 0 5px;
+}
+.main_product_box{
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 200px);
+    grid-gap: 20px;
+    margin-top: 50px;
+}
+.back_to_top{
+padding: 10px 15px;
+cursor: pointer;
+color: white;
+position: fixed;
+right: 0;
+bottom: 0;
+z-index: 5;
+    border-radius: 50%;
+    background-color: #000;
+}
+.back_to_top:hover{
+    background-color: gray;
+    transition: 1s;
+}
+.sign_box{
+    width: 100%;
+    max-height: 250px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+.link_sign{
+text-decoration: none;
+}
+.link_signin{
+    padding: 5px 50px;
+    background-color: #ffb731;
+color: black;
+}
+.link_signup{
+    color: dodgerblue;
+}
+@media only screen and (max-width: 780px){
+    .carousel_box{
+        width: 100%;
+    }
+    .main_picture_box{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, auto);
+    }
+
+}
+@media only screen and (max-width: 500px){
+    main{
+        margin-top: 100px;
+    }
+    .carousel_box{
+        width: 100%;
+    }
+    .main_picture_box{
+display: flex;
+flex-direction: column;
+align-items: center;
+    }
+.main_product_box{
+    grid-template-columns: repeat(1, 250px);
+    grid-template-rows: repeat(1, auto);
+
+}
+
+}
+.box_product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    background-color: white;
+    display: grid;
+
+}
+.four_images_box{
+display: grid;
+grid-template-columns: repeat(2, 150px);
+grid-template-rows: repeat(1, 130px);
+grid-gap: 5px;
+}
+.four_images_box  img{
+object-fit: cover;
+width: 100%;
+max-height: 100%;
+}
+.box_signle_img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 7px;
+}
+.text_title{
+    width: 90%;
+}
+.box_img{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+.product_img{
+object-fit: cover;
+width: 100%;
+height: auto;
+}
+.text_link{
+    width: 90%;
+text-decoration: none;
+color: dodgerblue;
+padding: 20px 5px;
+}
+.signin_btn{
+    width: 90%;
+    background-color: orange;
+    border: none;
+    border-radius: 6px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.signin_btn:hover{
+    background-color: gold;
+}
+.product_box{
+    background-color: white;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.box_products{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+.picture_product{
+    width: 90%;
+    height: auto;
+}
+.picture_product > img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}

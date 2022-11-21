@@ -1,0 +1,236 @@
+.header_part{
+    position: sticky;
+top: 0;
+left: 0;
+z-index: 10;
+}
+header{
+    width: 100%;
+    max-height: 100px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+header > div{
+    border: 1px solid transparent;
+    
+}
+header > div:hover{
+    border-color: white;
+}
+.header_logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100px;
+    height: 95%;
+}
+.header_logo > img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.header_location_box{
+    display: flex;
+    align-items: center;
+}
+.header_location_icon{
+    color: white;
+}
+.header_location_box  span{
+    color: gray;
+}
+.header_country{
+    color: white;
+}
+.header_input_search_box{
+    display: flex;
+    align-items: center;
+    width: 45%;
+}
+.header_input_search_box > select {
+    height: 100%;
+padding: 9px;
+    outline: none;
+    border: none;
+    background-color: #ded3d3;
+    border-radius: 5px 0px 0px 5px ;
+}
+.header_input_search_box > input {
+    width: 90%;
+    padding:  10px;
+    height: 100%;
+    outline: none;
+    border: none;
+}
+.header_input_search_box > button{
+    background: none;
+    padding: 9.6px 13px;
+    background-color: orange;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+.header_input_search_box > button:hover{
+    background-color: rgb(222, 144, 0);
+}
+.header_choose_language{
+    padding: 5px 10px;
+}
+.flag{
+    color: white;
+}
+.vector_down{
+    color: gray;
+}
+.header_signin_box_enter {
+    color: white;
+}
+.header_orders{
+    color: white;
+}
+.header_cart_box{
+    color: white;
+}
+.header_cart{
+    font-size: 25px;
+}
+.header_above_box{
+    max-height: 40px;
+    background-color: rgb(40, 36, 43);
+color: white;
+display: flex;
+align-items: center;
+
+}
+.header_above_box > div{
+    padding: 5px;
+    margin: 0 10px;
+    border: 1px solid transparent;
+}
+.header_above_box > div:hover{
+border-color: white;
+}
+.sidebar{
+    width: 30%;
+    min-height: 100vh;
+    display: flex;
+    position: absolute;
+    z-index: 11;
+    overflow: hidden;
+    top: 0;
+    transition: 0.5s;
+    left: -100%;
+    background-color: rgb(230, 230, 230);
+
+}
+.sidebar p{
+    cursor: pointer;
+}
+.shadow_box{
+    width: 100%;
+    min-height: 140vh;
+    position: absolute;
+    top: 0;
+    background-color: black;
+    opacity: 0.75;
+}
+.account_sidebar{
+    width: 100%;
+    background-color: rgb(47, 47, 47);
+    color: white;
+    display: flex;
+    align-items: center;
+    max-height: 40px;
+}
+.close_btn{
+    color: white;
+position: absolute;
+width: 100%;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+font-size: 30px;
+    cursor: pointer;
+}
+.navbar_option_text_box{
+height: 100%;
+min-width: 100%;
+}
+.text_box{
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
+}
+.text_nav_box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.box_sidebar{
+min-width: 100%;
+height: 100vh;
+overflow: auto;
+}
+.text_navbar{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 10px auto;
+}
+.text_navbar:hover{
+background-color: rgb(190, 190, 190);
+}
+.profile_account_box{
+width: 100%;
+display: flex;
+justify-content: center;
+    padding: 10px 0;
+    background-color: rgb(41, 28, 53);
+    color: white;
+}
+@media only screen and (max-width: 700px){
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .header_location_box{
+display: none;
+    }
+    .header_input_search_box{
+        display: none;
+    }
+    .sidebar{
+        width: 50%;
+    }
+    .header_choose_language{
+        display: none;
+    }
+    .header_signin_box_enter{
+        display: none;
+    }
+    .header_orders{
+        display: none;
+    }
+.header_details{
+    display: none;
+}
+.header_customer_service{
+    display: none;
+}
+.registry_text_header{
+    display: none;
+}
+.card_header_text{
+    display: none;
+}
+.text_sell_header{
+    display: none;
+}
+}
+@media only screen and (max-width: 400px){
+    .sidebar{
+        width: 60%;
+    }
+}

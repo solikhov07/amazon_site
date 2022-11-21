@@ -1,0 +1,54 @@
+[
+    {
+        "type": "AbeBooks",
+        "text": "Books, art & collectibles"
+    },
+    {
+        "type": "ACX",
+        "text": "Audiobook Publishing Made Easy"
+    },
+    {
+        "type": "Sell on Amazon",
+        "text": "Start a Selling Account"
+    },
+    {
+        "type": "Amazon Web Services",
+        "text": "Scalable Cloud Computing Services"
+    },
+    {
+        "type": "Audible",
+        "text": "Listen to Books & Original Audio Performances"
+    },
+    {
+        "type": "Book Depository",
+        "text": "Books With Free Delivery Worldwide"
+    },
+    {
+        "type": "Goodreads",
+        "text": "Book reviews & recommendations"
+    },
+    {
+        "type": "IMDb",
+        "text": "Movies, TV & Celebrities"
+    },
+    {
+        "type": "IMDbPro",
+        "text": "Get Info Entertainment Professionals Need"
+    },
+    {
+        "type": "Zappos",
+        "text": "Shoes & Clothing"
+    },
+    {
+        "type": "Ring",
+        "text": "Smart Home Security Systems"
+    },
+    {
+        "type": "eero WiFi",
+        "text": "Stream 4K Video in Every Room"
+    },
+    {
+        "type": "PillPack",
+        "text": "Pharmacy Simplified"
+    }
+]
