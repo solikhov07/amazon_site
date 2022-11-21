@@ -24,7 +24,7 @@ else{
   }
 return(
     <div className="subscribe_box-signin">
-<Link className='back_home_page' to="/home">Home</Link>
+<Link className='back_home_page' to="/">Home</Link>
     <div className="login-box">
       <div className="login-box-registr">
 <h1 className='introduction-signin'>Sign in</h1>

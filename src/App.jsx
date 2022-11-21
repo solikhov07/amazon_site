@@ -8,7 +8,7 @@ import Login from './routes/registr/Login';
 function App() {
   return (
     <div className="App">
-<Route exact path="/home">
+<Route exact path="/">
 <Header/>
   <Main/>
   <Footer/>
