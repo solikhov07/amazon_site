@@ -1,0 +1,38 @@
+.product_container{
+    display: flex;
+}
+.wrapper_imafe_container{
+    display: flex;
+    width: 32%;
+    justify-content: space-between;
+}
+.container_images_options{
+    height: 300px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.image_options{
+    width: 100%;
+    height: 30%;
+}
+.image_options > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.chosen_product{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+.container_description_info{
+    margin-left: 30px;
+}
+.icon_star{
+    color: gold;
+}
+.product_text_description{
+    max-width: 300px;
+}

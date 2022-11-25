@@ -1,0 +1,87 @@
+.product_container{
+display: flex;
+justify-content: space-around;
+}
+.side_shop_text_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 220vh;
+    width: auto;
+    border-right: 2px solid gray;
+    padding-right: 5px;
+}
+.text_box{
+    display: flex;
+    flex-direction: column;
+}
+.side_text_appex:hover{
+color: orange;
+}
+.icon_prime{
+    color: dodgerblue;
+    font-size: 25px;
+}
+.container_box_cards{
+width: 70%;
+}
+.container_box_cards > div{
+    margin-top: 30px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, auto);
+}
+.product_card{
+    border-radius: 5px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;    
+box-shadow: 0px 5px 5px gray;
+}
+.container_box_cards  img{
+width: 100%;
+height: 70%;
+    object-fit: contain;
+}
+.icon_star{
+    color: gold;
+}
+.basic_product_description{
+    max-width: 150px;
+    display: flex;
+    justify-content: center;
+}
+.discount_box > button{
+    background-color: deeppink;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.discount_box > span{
+    color: deeppink;
+}
+.price_ptoduct_box{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    justify-content: space-between;
+}
+@media only screen and (max-width: 780px){
+    .container_box_cards > div{
+        margin-top: 30px;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 250px);
+    }
+}
+@media only screen and (max-width: 400px){
+    .side_shop_text_box{
+        display: none;
+    }
+}

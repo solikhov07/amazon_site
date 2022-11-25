@@ -90,7 +90,7 @@ else{
     <div className={c.main_picture_box}>
     {
         cards.map((infoCard, index) => 
-<div className="">
+<Link to='/shop' className="">
         {
     infoCard.cardImages ? 
     <div className={c.box_product}>
@@ -118,7 +118,7 @@ else{
        </div>
        }
 
-</div>
+</Link>
             )
     }
     </div>
@@ -138,7 +138,7 @@ else{
     <div className={c.box_products}>
         {
 boxesPhoto.map((images) =>
-<div className={c.product_box}>
+<Link className={c.product_box}>
 <h3 className={c.text_title}>{images.title}</h3>
 {images.cardImages ?
 <div className={c.four_images_box}>
@@ -155,7 +155,7 @@ boxesPhoto.map((images) =>
 </div>
 }
 <Link className={c.text_link}>{images['text-link']}</Link>
-</div>
+</Link>
     )
         }
     </div>
