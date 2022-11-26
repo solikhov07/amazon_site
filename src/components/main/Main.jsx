@@ -34,12 +34,12 @@ else{
         carouselEl.current.scrollLeft = result * carouselEl.current.offsetWidth
     }, [result])
     const images = [
-        "https://m.media-amazon.com/images/I/61-8rBAD68L._SX3000_.jpg",
+         "https://m.media-amazon.com/images/I/71CFB7VgeuL._SX3000_.jpg",
         "https://m.media-amazon.com/images/I/61jovjd+f9L._SX3000_.jpg",
         "https://m.media-amazon.com/images/I/61BvxKSpy3L._SX3000_.jpg",
         "https://m.media-amazon.com/images/I/61TD5JLGhIL._SX3000_.jpg",
         "https://m.media-amazon.com/images/I/71qid7QFWJL._SX3000_.jpg",
-        "https://m.media-amazon.com/images/I/71CFB7VgeuL._SX3000_.jpg"
+        "https://m.media-amazon.com/images/I/61-8rBAD68L._SX3000_.jpg"
       ];
       function nextPage(){
         if(scrollPage < 3){
@@ -70,7 +70,7 @@ else{
     <>
 <div className={c.carousel_box}>
     <div className={c.wrapper_btn_box}>
-<button className={c.btn_left} onClick={prev}><TfiAngleLeft/></button> <button className={c.btn_right} onClick={next}><TfiAngleRight/></button>
+<button className={c.btn_left} onClick={prev}><TfiAngleLeft className={c.btn_icon}/></button> <button className={c.btn_right} onClick={next}><TfiAngleRight className={c.btn_icon} /></button>
     </div>
     <div className={c.carousel_circle_box}>
 {
