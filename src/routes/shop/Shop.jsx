@@ -47,15 +47,18 @@ const Shop = () => {
                         )}
                         {text.textOptions.map(text =>
                             <Link className={c.side_text_appex}><AiOutlineLeft/>{text.option}</Link>
-                            )}
+                    
+                    )}
+                    <form action="">
                 <div>
                 <h4>Eligible for Free Shipping</h4>
-                    <input id='free' type="checkbox" /> <label htmlFor="free">FREE Shipping</label>
+                    <input id='free' name="gender" type="checkbox" /> <label htmlFor="free">FREE Shipping</label>
                 </div>
                 <div>
                 <h4>Amazon Prime</h4>
-                    <input type="checkbox" name="" id="prime" /> <label className={c.icon_prime} htmlFor="prime"><SiPrime/></label>
+                    <input type="checkbox" name="gender" id="prime" /> <label className={c.icon_prime} htmlFor="prime"><SiPrime/></label>
                 </div>
+                </form>
 </div>
                     )              
                      : null

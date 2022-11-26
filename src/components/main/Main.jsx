@@ -39,6 +39,7 @@ else{
         "https://m.media-amazon.com/images/I/61BvxKSpy3L._SX3000_.jpg",
         "https://m.media-amazon.com/images/I/61TD5JLGhIL._SX3000_.jpg",
         "https://m.media-amazon.com/images/I/71qid7QFWJL._SX3000_.jpg",
+        "https://m.media-amazon.com/images/I/71CFB7VgeuL._SX3000_.jpg"
       ];
       function nextPage(){
         if(scrollPage < 3){
@@ -73,7 +74,7 @@ else{
     </div>
     <div className={c.carousel_circle_box}>
 {
-    new Array(5).fill("*").map((circles, index) => 
+    new Array(6).fill("*").map((circles, index) => 
     <div key={index} onClick={() => {setResult(index)}} style={result === index ? {background: "white"} : null} className={c.carousel_circles}></div>
     )
 }
@@ -103,7 +104,7 @@ else{
        )}
        </div>
        {infoCard.linkText ? 
-        <Link className={c.text_link}>{infoCard.linkText}</Link> : null
+        <Link to='/products' className={c.text_link}>{infoCard.linkText}</Link> : null
 }
        </div>: 
        <div className={c.box_signle_img}>
@@ -113,7 +114,7 @@ else{
         <img src={infoCard.img} className={c.product_img} alt="" />
         </div>
 {infoCard.linkText ? 
-        <Link className={c.text_link}>{infoCard.linkText}</Link> : null
+        <Link to='/products' className={c.text_link}>{infoCard.linkText}</Link> : null
 }
        </div>
        }
@@ -138,7 +139,7 @@ else{
     <div className={c.box_products}>
         {
 boxesPhoto.map((images) =>
-<Link className={c.product_box}>
+<Link to='/shop' className={c.product_box}>
 <h3 className={c.text_title}>{images.title}</h3>
 {images.cardImages ?
 <div className={c.four_images_box}>

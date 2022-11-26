@@ -222,12 +222,25 @@ color: black;
 .link_signup{
     color: dodgerblue;
 }
+.box_products{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
 @media only screen and (max-width: 780px){
+    main{
+        margin-top: 80px;
+    }
     .carousel_box{
         width: 100%;
     }
     .main_picture_box{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, auto);
+    }
+    .box_products{
+        grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, auto);
     }
 
@@ -250,10 +263,8 @@ align-items: center;
 
 }
 .box_products{
-    display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 20px;
+    grid-template-rows: repeat(1, auto);
 }
 
 }
@@ -263,8 +274,6 @@ align-items: center;
     align-items: center;
     border-radius: 7px;
     background-color: white;
-    display: grid;
-
 }
 .four_images_box{
 display: grid;
@@ -322,12 +331,7 @@ padding: 20px 5px;
     align-items: center;
     justify-content: space-around;
 }
-.box_products{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 20px;
-}
+
 .picture_product{
     width: 90%;
     height: auto;

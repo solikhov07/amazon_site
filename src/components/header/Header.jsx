@@ -28,6 +28,12 @@ const [selectOption, setSelectOption] = useState("all")
       sideBarEl.current.scrollLeft = 0
     }
   }, [pickedText])
+  if(sidebar){
+    document.body.style.overflow = 'hidden'
+  }
+  else{
+    document.body.style.overflow = 'auto'
+  }
   console.log(pickedText);
   function clickSidebar(){
     setSidebar(true)

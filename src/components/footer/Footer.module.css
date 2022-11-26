@@ -1,6 +1,7 @@
 footer{
-    max-height: 500px;
+    height: auto;
     background-color: rgb(14, 15, 42);
+    width: 100%;
 }
 .back_to_top_box{
     width: 100%;
@@ -31,7 +32,7 @@ footer p:hover{
     cursor: pointer;
 }
 .footer_above_box{
-    height: 800px;
+    height: auto;
 width: 100%;
 background-color: black;
 display: flex;
@@ -62,6 +63,18 @@ color: white;
     display: grid;
     grid-template-columns: repeat(3, 200px);
     grid-template-rows: repeat(1, 100px);
+}
+@media only screen and (max-width: 780px){
+    .box_leftside{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, auto); 
+        height: 100%;       
+    }
+    .box_rightside{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, auto);
+    height: 100%;
+    }
 }
 @media only screen and (max-width: 500px){
     .footer_text_box{
