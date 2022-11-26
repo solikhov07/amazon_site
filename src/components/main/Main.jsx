@@ -155,7 +155,7 @@ boxesPhoto.map((images) =>
 <img src={images.img} alt="" />
 </div>
 }
-<Link className={c.text_link}>{images['text-link']}</Link>
+<Link to='/products' className={c.text_link}>{images['text-link']}</Link>
 </Link>
     )
         }
