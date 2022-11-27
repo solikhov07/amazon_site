@@ -45,7 +45,7 @@ useEffect(() => {window.scrollTo({top: 0})}, [])
       <div style={tracker ? {display : "block",
     backgroundImage: `url(${individualProduct.image[imageChoice].url})`,
     backgroundRepeat: "no-repeat",
-    backgroundSize: '200%',
+    backgroundSize: '250%',
     backgroundPosition: `${-mousePosition.x}px ${-mousePosition.y * 1.4  + 30}px`,
     } : {display: "none"}} className={c.shown_picture}>
 
