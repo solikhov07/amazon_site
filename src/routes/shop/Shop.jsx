@@ -101,7 +101,7 @@ useEffect(() => {window.scrollTo({top: 0})}, [])
                                 <div className={c.price_ptoduct_box}>
                                 <b><sup>
                                     <b>$</b>
-                                </sup>{items.price}</b> <s>{items.price + 100}$</s>
+                                </sup>{items.price}</b> <s>{items.price * 2}$</s>
                                 </div>
                             </Link>
                         )}</div> : <p>Please try again</p>

@@ -14,10 +14,10 @@ function App() {
       <Route>
       <Header/>
       </Route>
-<Route exact path="/">
+<Route exact path='/'>
   <Main/>
-  <Footer/>
 </Route>
+
   <Route path='/signin'>
     <Login/>
   </Route>
@@ -29,6 +29,9 @@ function App() {
 </Route>
 <Route path='/shop/:productId'>
   <ProductInfo/>
+</Route>
+<Route>
+<Footer/>
 </Route>
     </div>
   );

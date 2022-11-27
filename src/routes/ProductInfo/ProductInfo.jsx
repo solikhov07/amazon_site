@@ -74,7 +74,7 @@ useEffect(() => {window.scrollTo({top: 0})}, [])
         <span>with discount:</span> <b>{individualProduct.price}$</b>
       </div>
       <div>
-        <span>without :</span> <b>{individualProduct.price + 100}$</b>
+        <span>without :</span> <b>{individualProduct.price * 2}$</b>
       </div>
     </div>
     <div className={c.box_version_product}>
