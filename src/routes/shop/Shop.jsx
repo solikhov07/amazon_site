@@ -19,6 +19,8 @@ const Shop = () => {
             })
             .catch(err => console.log(err))
     }, [])
+useEffect(() => {window.scrollTo({top: 0})}, [])
+
     console.log(result);
     return (
         <div className={c.product_container}>

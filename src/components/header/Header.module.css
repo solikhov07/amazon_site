@@ -52,7 +52,8 @@ header > div:hover{
 }
 .header_input_search_box > select {
     height: 100%;
-padding: 9px;
+padding: 9px 0;
+width: auto;
     outline: none;
     border: none;
     background-color: #ded3d3;
