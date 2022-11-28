@@ -42,7 +42,7 @@ const [selectOption, setSelectOption] = useState("all")
     setSidebar(false)
   }
   const { pathname } = useLocation()
-  if(pathname.includes("/signin")){
+  if(pathname.includes("/signin") || pathname.includes("/signup")){
     return
   }
   return (

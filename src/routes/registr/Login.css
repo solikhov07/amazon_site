@@ -17,7 +17,7 @@ cursor: pointer;
 }
 .login-box{
     height: auto;
-    max-width: 33%;
+    min-width: 33%;
     border-radius: 5px;
     border: 1px solid gray;
 }
