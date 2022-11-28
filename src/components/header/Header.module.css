@@ -113,6 +113,11 @@ align-items: center;
 .header_above_box > div:hover{
 border-color: white;
 }
+.header_above_box a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
 .sidebar{
     width: 30%;
     min-height: 100vh;

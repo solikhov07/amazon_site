@@ -1,8 +1,9 @@
-import './Servic.css';
+import './CustomerService.css';
 import { useState } from 'react';
 import { MdOutlineSearch } from 'react-icons/md';
 import { SlArrowRight } from 'react-icons/sl';
-function Servic() {
+import { Link } from 'react-router-dom';
+function CustomerService() {
   const form = () => {
     const formSearch = document.querySelector(".form-search");
     formSearch.style.boxShadow = '0px 0px 2px blue';
@@ -13,7 +14,7 @@ function Servic() {
       <div className='service__header'>
         <p className='service__header-title'>Customer Service</p>
         <p className='service__header-line-ver'></p>
-        <p className='service__header-title home-border'>Home</p>
+        <Link to='/' className='service__header-title home-border'>Home</Link>
         <p className='service__header-title'>Digital Services and Device Support</p>
       </div>
       <section className='service__section'>
@@ -22,39 +23,39 @@ function Servic() {
           <h3 className='service__banner-text'>What would you like help with today? You can quickly take care of most things here, or connect with us when needed.</h3>
           <div className='service__banner-card-container'>
             <div className='banner-card'>
-              <img className='card-images' alt="card-img" />
+              <img className='card-images' src='https://m.media-amazon.com/images/G/01/x-locale/cs/help/images/gateway/self-service/fshub/fshub_order_v2._CB432205751_.png' alt="card-img" />
               <p className='banner__card-title'>A delivery, order or return</p>
             </div>
             <div className='banner-card'>
-              <img className='card-images'  alt="card-img" />
+              <img className='card-images' src='https://m.media-amazon.com/images/G/01/x-locale/cs/help/images/gateway/self-service/fshub/fshub_prime_v2._CB432205750_.png'  alt="card-img" />
               <p className='banner__card-title'>Prime</p>
             </div>
             <div className='banner-card'>
-              <img className='card-images'  alt="card-img" />
+              <img className='card-images' src='https://m.media-amazon.com/images/G/01/x-locale/cs/help/images/gateway/self-service/fshub/fshub_paymentgc_v2._CB432205751_.png' alt="card-img" />
               <p className='banner__card-title'>Payment, charges or gift cards</p>
             </div>
             <div className='banner-card'>
-              <img className='card-images'  alt="card-img" />
+              <img className='card-images' src='https://m.media-amazon.com/images/G/01/x-locale/cs/help/images/gateway/self-service/fshub/fshub_paymentgc_v2._CB432205751_.png' alt="card-img" />
               <p className='banner__card-title'>Login, address, security & privacy</p>
             </div>
             <div className='banner-card'>
-              <img className='card-images'  alt="card-img" />
+              <img className='card-images' src='https://m.media-amazon.com/images/G/01/x-locale/cs/help/images/gateway/self-service/fshub/fshub_login_security_v2._CB432205751_.png' alt="card-img" />
               <p className='banner__card-title'>Memberships, subscriptions or communications</p>
             </div>
             <div className='banner-card'>
-              <img className='card-images'  alt="card-img" />
+              <img className='card-images' src='https://m.media-amazon.com/images/G/01/x-locale/cs/help/images/gateway/self-service/fshub/fshub_device_v2._CB432205751_.png' alt="card-img" />
               <p className='banner__card-title'>Kindle, Fire or Alexa device</p>
             </div>
             <div className='banner-card'>
-              <img className='card-images'  alt="card-img" />
+              <img className='card-images' src='https://m.media-amazon.com/images/G/01/x-locale/cs/help/images/gateway/self-service/fshub/fshub_dcontent_v3._CB428304563_.png' alt="card-img" />
               <p className='banner__card-title'>eBooks, Prime Videos or Music</p>
             </div>
             <div className='banner-card'>
-              <img className='card-images'  alt="card-img" />
+              <img className='card-images' src='https://m.media-amazon.com/images/G/01/x-locale/cs/help/images/gateway/self-service/fshub/accessibility._CB653395151_.png' alt="card-img" />
               <p className='banner__card-title'>Accessibility</p>
             </div>
             <div className='banner-card'>
-              <img className='card-images'  alt="card-img" />
+              <img className='card-images' src='https://m.media-amazon.com/images/G/01/x-locale/cs/help/images/gateway/self-service/fshub/fshub_somethingelse_v3._CB428112012_.png' alt="card-img" />
               <p className='banner__card-title'>Something else</p>
             </div>
           </div>
@@ -74,7 +75,6 @@ function Servic() {
           <h1 className='tabs__section-title'>All help topics</h1>
           <div className='tabs__div-group'>
             <div className='tabs__card-group'>
-              <p className={`tabs-card ${index === 0 ? 'active' : null}`} onClick={() => { setIndex(0) }}>Recommended Topics</p>
               <p className={`tabs-card ${index === 1 ? 'active' : null}`} onClick={() => { setIndex(1) }}>Where's my stuff</p>
               <p className={`tabs-card ${index === 2 ? 'active' : null}`} onClick={() => { setIndex(2) }}>Shipping and Delivery</p>
               <p className={`tabs-card ${index === 3 ? 'active' : null}`} onClick={() => { setIndex(3) }}>Returns and Refunds</p>
@@ -560,4 +560,4 @@ function Servic() {
     </div>
   );
 }
-export default Servic;
+export default CustomerService;

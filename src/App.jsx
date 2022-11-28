@@ -3,6 +3,7 @@ import './App.css';
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import Main from './components/main/Main';
+import CustomerService from './routes/CustomerService/CustomerService';
 import ProductInfo from './routes/ProductInfo/ProductInfo';
 import Products from './routes/Products/Products';
 import Login from './routes/registr/Login';
@@ -18,7 +19,9 @@ function App() {
 <Route exact path='/'>
   <Main/>
 </Route>
-
+<Route path='/customer-service'>
+  <CustomerService/>
+</Route>
   <Route path='/signin'>
     <Login/>
   </Route>

@@ -9,7 +9,7 @@ const Footer = () => {
         window.scrollTo({top: 0})
     }
  const { pathname } = useLocation()
-    if(pathname.includes("/signin") || pathname.includes("/signup") ){
+    if(pathname.includes("/signin") || pathname.includes("/signup") || pathname.includes("/customer-service") ){
         return
     }
     return (

@@ -12,7 +12,10 @@
     gap: 24px;
     font-weight: 500;
   }
-  
+  a{
+    color: white;
+    text-decoration: none;
+  }
   .service__header-title {
     line-height: 37px;
     cursor: pointer;

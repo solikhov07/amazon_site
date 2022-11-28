@@ -1,5 +1,5 @@
 import React from 'react'
-import {  useLocation } from 'react-router-dom'
+import {  Link, useLocation } from 'react-router-dom'
 import c from './Header.module.css'
 import { SlLocationPin } from 'react-icons/sl'
 import { BsChevronLeft, BsSearch } from 'react-icons/bs'
@@ -95,10 +95,10 @@ const [selectOption, setSelectOption] = useState("all")
   <span>Today's details</span>
 </div>
 <div className={c.header_customer_service}>
-  <span>Customer Service</span>
+  <Link to='/customer-service'>Customer Service</Link>
 </div>
 <div className={c.registry_text_header} >
-  <span>Registry</span>
+  <Link className={c.lint_to_login} to='signin'>Registry</Link>
 </div>
 <div className={c.card_header_text} >
   <span>Gift cards</span>
