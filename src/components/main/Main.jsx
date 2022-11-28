@@ -100,7 +100,7 @@ cards.map((images) =>
 <div className={c.four_images_box}>
 {images.cardImages.map(items =>
     <div>
-        <b>{items.name}</b>
+        <b className={c.product_name}>{items.name}</b>
 <img src={items.img} alt="" />
     </div>
     )}
@@ -137,7 +137,7 @@ boxesPhoto.map((images) =>
 <div className={c.four_images_box}>
 {images.cardImages.map(items =>
     <div>
-        <b>{items.name}</b>
+        <b className={c.product_name}>{items.name}</b>
 <img src={items.img} alt="" />
     </div>
     )}

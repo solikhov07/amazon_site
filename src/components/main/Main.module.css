@@ -302,6 +302,10 @@ max-height: 100%;
 }
 .text_title{
     width: 90%;
+    color: black;
+}
+.product_name{
+    color: black;
 }
 .box_img{
     width: 90%;
