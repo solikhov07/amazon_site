@@ -88,40 +88,32 @@ else{
     </div>
 </div>
 <main>
-    <div className={c.main_picture_box}>
-    {
-        cards.map((infoCard, index) => 
-<Link to='/shop' className="">
+<div className={`${c.box_products} ${c.main_picture_box}`}>
         {
-    infoCard.cardImages ? 
-    <div className={c.box_product}>
-        <div className={c.four_images_box}>
-   { infoCard.cardImages.map(imges =>
-        <div >
-        <b>{imges.name}</b>
-        <img src={imges.img} alt="" />
-        </div>
-       )}
-       </div>
-       {infoCard.linkText ? 
-        <Link to='/products' className={c.text_link}>{infoCard.linkText}</Link> : null
+cards.map((images) =>
+<Link to='/shop' className={c.product_box}>
+    {images.btn ?
+<button className={c.btn_product}>{images.btn}</button>
+: null }
+<h3 className={c.text_title}>{images.title}</h3>
+{images.cardImages ?
+<div className={c.four_images_box}>
+{images.cardImages.map(items =>
+    <div>
+        <b>{items.name}</b>
+<img src={items.img} alt="" />
+    </div>
+    )}
+</div>
+:
+<div className={c.picture_product}>
+<img src={images.img} alt="" />
+</div>
 }
-       </div>: 
-       <div className={c.box_signle_img}>
-{infoCard.btn ? <button className={c.signin_btn}>{infoCard.btn}</button> : null}
-        <h3 className={c.text_title}>{infoCard.title}</h3>
-        <div className={c.box_img}>
-        <img src={infoCard.img} className={c.product_img} alt="" />
-        </div>
-{infoCard.linkText ? 
-        <Link to='/products' className={c.text_link}>{infoCard.linkText}</Link> : null
-}
-       </div>
-       }
-
+<Link to='/products' className={c.text_link}>{images['text-link']}</Link>
 </Link>
-            )
-    }
+    )
+        }
     </div>
     <div  className={c.carousel_products}>
         <div ref={carouselProduct} className={c.carousel_box_photo}>
