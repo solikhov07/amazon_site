@@ -37,17 +37,16 @@ footer p:hover{
 width: 100%;
 background-color: black;
 display: flex;
-justify-content: space-between;
+justify-content: center;
 color: white;
 }
 .footer_above_box > div{
     margin-top: 50px;
 }
 .box_leftside{
-    width: 45%;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(4, 200px);
+    grid-template-columns: repeat(4, 150px);
     grid-template-rows: repeat(1, 100px);
 }
 .footer_above_box  b{
@@ -59,10 +58,9 @@ color: white;
     font-size: 13px;
 }
 .box_rightside{
-    width: 45%;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(3, 150px);
     grid-template-rows: repeat(1, 100px);
 }
 @media only screen and (max-width: 780px){
@@ -82,7 +80,7 @@ color: white;
         display: flex;
         justify-content: center;
     }
-    .footer_text_box h3{
+    .footer_text_box b{
         font-size: 15px;
     }
     .footer_text_box p{
