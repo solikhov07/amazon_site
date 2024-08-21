@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from '../../images/amazon.webp'
 import {  Link, useLocation } from 'react-router-dom'
 import c from './Header.module.css'
 import { SlLocationPin } from 'react-icons/sl'
@@ -50,7 +51,7 @@ const [selectOption, setSelectOption] = useState("all")
     <div className={c.header_part}>
       <header>
 <div className={c.header_logo}>
-  <img src="https://bizmonthly.com/wp-content/uploads/2020/04/Amazon-logo-black-template.png" alt="" />
+  <img src={logo} alt="" />
 </div>
 <div className={c.header_location_box}>
   <div className={c.header_location_icon}>
